@@ -13,6 +13,20 @@
     </header>
     
     <main>
+        <aside>
+            <h2>Choose your name</h2>
+            <form>
+                <div>
+                    <label for="playername">Player name</label>
+                    <input type="text" name="username" id="playername"/>
+
+                </div>
+                <div>
+                    <button type="button">Cancel</button>
+                    <button type="submit">Confirm</button>
+                </div>
+            </form>
+        </aside>
         <section id="game-configuration">
             <ol>
                 <li>
@@ -20,6 +34,7 @@
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
                         <p>X</p>
+                        <button>Edit</button>
                     </article>
                 </li>
                 <li>
@@ -27,11 +42,35 @@
                         <h2>Player 2</h2>
                         <h3>PLAYER NAME</h3>
                         <p>O</p>
+                        <button>Edit</button>
                     </article>
                 </li>
             </ol>
+            <button>Start New Game</button>
         </section>
-        <section id="active-game"></section>
+        <section id="active-game">
+
+            <article>
+                <h3>You Won<span id="winner-name">PLAYER_NAME</span>!</h3>
+                <p>Click "Start New Game"</p>
+            </article>
+
+
+            <p>It's your turn <span id="active-player-name">PLAYERNAME</span>!</p>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </section>
     </main>
     
 </body>
