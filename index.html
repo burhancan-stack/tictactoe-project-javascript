@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="stylesheet" href="styles/overlays.css"/>
+    <link rel="stylesheet" href="styles/configuration.css"/>
 </head>
 <body>
     <div id="backdrop"></div>
@@ -19,10 +20,10 @@
     </header>
     
     <main>
-        <aside class="modal">
+        <aside class="modal" id="config-overlay">
             <h2>Choose your name</h2>
             <form>
-                <div>
+                <div class="form-control">
                     <label for="playername">Player name</label>
                     <input type="text" name="username" id="playername"/>
 
@@ -39,7 +40,7 @@
                     <article>
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
-                        <p>X</p>
+                        <p class="player-symbol">X</p>
                         <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
@@ -47,12 +48,12 @@
                     <article>
                         <h2>Player 2</h2>
                         <h3>PLAYER NAME</h3>
-                        <p>O</p>
+                        <p class="player-symbol">O</p>
                         <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
             </ol>
-            <button>Start New Game</button>
+            <button class="btn">Start New Game</button>
         </section>
         <section id="active-game">
 
