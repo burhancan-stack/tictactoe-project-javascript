@@ -1,0 +1,33 @@
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 90%; /*kalan %5 kısım right olacak */
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: block;
+    /* default olarak block  modal display after "none"   */
+
+
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    /* model için arka planı gizmele tekniği */
+}
+
+@media (min-width: 48rem) {
+    .modal {
+        left: calc(50% - 20rem);
+        width: 40rem;
+
+    }
+}
+

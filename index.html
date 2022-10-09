@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/overlays.css"/>
 </head>
 <body>
-    <header>
+    <div id="backdrop"></div>
+    <header id="main-header">
         <h1>Play Tic, Tac, Toe</h1>
         <p>Built with HTML, CSS, JAVASCRIPT, AND LOTS OF LOVE</p>
     </header>
     
     <main>
-        <aside>
+        <aside class="modal">
             <h2>Choose your name</h2>
             <form>
                 <div>
@@ -22,8 +28,8 @@
 
                 </div>
                 <div>
-                    <button type="button">Cancel</button>
-                    <button type="submit">Confirm</button>
+                    <button type="button" class="btn-alt">Cancel</button>
+                    <button type="submit" class="btn">Confirm</button>
                 </div>
             </form>
         </aside>
@@ -34,7 +40,7 @@
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
                         <p>X</p>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
                 <li>
@@ -42,7 +48,7 @@
                         <h2>Player 2</h2>
                         <h3>PLAYER NAME</h3>
                         <p>O</p>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
             </ol>
