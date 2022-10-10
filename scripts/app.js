@@ -1,5 +1,16 @@
 //magicxD
 
+let editedPlayer = 0;
+const players = [
+    { name: '',
+     symbol: 'X'
+    },
+    { name: '',
+     symbol: 'O'
+    },
+];
+
+
 
 
 const playerConfigOverlayElement = document.getElementById('config-overlay');
@@ -15,4 +26,4 @@ const cancelButton = document.getElementById('cancelBtn');
 editPlayer1BtnElement.addEventListener('click', openPlayerConfig);
 editPlayer2BtnElement.addEventListener('click', openPlayerConfig);
 cancelButton.addEventListener('click', closePlayerConfig)
-formElement.addEventListener('submit',savePlayerConfig);
+formElement.addEventListener('submit', savePlayerConfig);

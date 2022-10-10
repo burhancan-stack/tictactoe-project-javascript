@@ -25,6 +25,16 @@
     padding: 0.35rem;
 }
 
+.error label {
+    color: rgb(136,2,2);
+}
+
+.error input {
+    border-color: rgb(136,2,2);
+    color: rgb(136,2,2);
+    background-color: rgb(253,219,219);
+}
+
 #game-configuration {
     width: 90%;
     max-width: 40rem;
@@ -63,8 +73,17 @@
 }
 
 .player-symbol {
-    font: 2rem;
     font-weight: bold;
     color: rgb(47,4,82);
     margin: 0.5rem 0;
+    font-size: 2rem;
 }
+
+body {
+    background-image: url('https://images.hdqwalls.com/wallpapers/white-cube-pattern-4k-bu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
