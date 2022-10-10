@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="stylesheet" href="styles/overlays.css"/>
     <link rel="stylesheet" href="styles/configuration.css"/>
@@ -20,7 +21,7 @@
     <div id="backdrop"></div>
     <header id="main-header">
         <h1>Play Tic, Tac, Toe</h1>
-        <p>Built with HTML, CSS, JAVASCRIPT, AND LOTS OF LOVE</p>
+        <p>An amazing creation with skills. From canmertinson</p>
     </header>
     
     <main>
@@ -29,9 +30,9 @@
             <form>
                 <div class="form-control">
                     <label for="playername">Player name</label>
-                    <input type="text" name="username" id="playername"/>
-
+                    <input type="text" name="username" id="playername" required/>
                 </div>
+                <p id="config-errors"></p>
                 <div>
                     <button type="button" class="btn-alt" id="cancelBtn">Cancel</button>
                     <button type="submit" class="btn">Confirm</button>
@@ -43,7 +44,8 @@
                 <li>
                     <article>
                         <h2>Player 1</h2>
-                        <h3>PLAYER NAME</h3>
+                        <h3>canmertinyo</h3>
+                        <h5 class="country-tag">&#127481 &#127479</h5>
                         <p class="player-symbol">X</p>
                         <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
                     </article>
@@ -51,7 +53,8 @@
                 <li>
                     <article>
                         <h2>Player 2</h2>
-                        <h3>PLAYER NAME</h3>
+                        <h3>netherland_king</h3>
+                        <h5 class="country-tag">&#127475 &#127473</h5>
                         <p class="player-symbol">O</p>
                         <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
                     </article>
@@ -64,7 +67,7 @@
                 <h2>You Won<span id="winner-name">PLAYER_NAME</span>!</h2>
                 <p>Click "Start New Game"</p>
             </article>
-            <p>It's your turn <span id="active-player-name">PLAYERNAME</span>!</p>
+            <p>It's your turn <span id="active-player-name">canmertinyo</span>!</p>
             <ol id="game-board">
                 <li></li>
                 <li></li>

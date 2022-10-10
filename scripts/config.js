@@ -11,3 +11,13 @@ function closePlayerConfig() {
     backdropElement.style.display = "none";
 }
 
+function savePlayerConfig(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const enteredPlayername = formData.get("username").trim();
+    console.log(enteredPlayername);
+
+    if(!enteredPlayername) {
+        errorsOutputElement.textContent = 'Please enter a valid name!';
+    }
+  }
