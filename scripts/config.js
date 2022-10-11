@@ -48,3 +48,4 @@ function savePlayerConfig(event) {
     closePlayerConfig();
 
   }
+
